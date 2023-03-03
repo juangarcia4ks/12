@@ -3,7 +3,9 @@
 
   // Validamos que exista una session y ademas que el cargo que exista sea igual a 1 (Administrador)
   if(!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 2){
-    header('location: ../../index.php');
+    header('location: https://csn.4ks.global');
+	  exit;
+
   }
 
 ?>
