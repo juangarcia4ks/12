@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chart JS Doughnut</title>
+<title>simple app demo php Chart JS Doughnut</title>
 <link rel='stylesheet' href='style.css' type='text/css' />
 </head>
 <body>
