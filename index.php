@@ -1,7 +1,12 @@
 <?php
-session_start();
-// resto del código de la página
+  session_start();
 
+  // Validamos que exista una session y ademas que el cargo que exista sea igual a 1 (Administrador)
+  if(!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 2){
+    header('location: ../../index.php');
+  }
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,4 +46,4 @@ session_start();
 	</script>
 </body>
 </html>
-?>
+
