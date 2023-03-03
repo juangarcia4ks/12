@@ -1,11 +1,18 @@
 <?php
+
+  /*
+    En ocasiones el usuario puede volver al login
+    aun si ya existe una sesion iniciada, lo correcto
+    es no mostrar otra ves el login sino redireccionarlo
+    a su pagina principal mientras exista una sesion entonces
+    creamos un archivo que controle el redireccionamiento
+  */
+
   session_start();
 
-  // Validamos que exista una session y ademas que el cargo que exista sea igual a 1 (Administrador)
-  if(!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 2){
-    header('location: https://csn.4ks.global');
-	  exit;
-
+  // isset verifica si existe una variable o eso creo xd
+  if(isset($_SESSION['id'])){
+    header('location: https://csn.4ks.global/controller/redirec.php');
   }
 
 ?>
