@@ -1,3 +1,7 @@
+<?php
+session_start();
+// resto del código de la página
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,3 +41,4 @@
 	</script>
 </body>
 </html>
+?>
